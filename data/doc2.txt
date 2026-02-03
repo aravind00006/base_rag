@@ -1,0 +1,9 @@
+Machine Learning (ML) is a subset of artificial intelligence that focuses on building models that learn from data. Instead of writing explicit rules, developers provide examples, and the model learns patterns that generalize to new data.
+
+Common types of machine learning include supervised learning, unsupervised learning, and reinforcement learning. In supervised learning, models are trained using labeled data, while unsupervised learning finds structure in unlabeled data.
+
+ML models represent knowledge in the form of parameters and weights. During training, these parameters are adjusted to minimize error on the training data. Once trained, the model can make predictions on unseen inputs.
+
+Embeddings are an important concept in modern ML systems. They are numerical vector representations of data such as text, images, or audio. Similar items have embeddings that are close in vector space.
+
+In RAG systems, embeddings are used to retrieve relevant information from large document collections, enabling language models to generate answers grounded in external knowledge.

@@ -1,0 +1,9 @@
+Artificial Intelligence (AI) is a broad field of computer science focused on building systems that can perform tasks requiring human intelligence. These tasks include reasoning, problem-solving, perception, language understanding, and decision-making.
+
+Modern AI systems are largely data-driven and rely on statistical models rather than explicit rules. Machine learning is a major subfield of AI, where models learn patterns from data instead of being manually programmed.
+
+Large Language Models (LLMs) are a recent advancement in AI that can understand and generate human-like text. They are trained on massive datasets and use transformer architectures based on attention mechanisms.
+
+However, LLMs do not truly understand information. They generate responses based on probability, which can lead to hallucinations — confident but incorrect answers. This limitation is a key reason why techniques like Retrieval-Augmented Generation (RAG) are used.
+
+AI systems are powerful but must be carefully designed, evaluated, and constrained to ensure reliability, correctness, and safety in real-world applications.
