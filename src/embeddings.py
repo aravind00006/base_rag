@@ -5,7 +5,7 @@ load_dotenv()
 client = OpenAI()
 
 def embed_chunks(chunks):
-    """Input= chunks ----> output= embeddings, metadata"""
+    """Input= chunks ----> return embeddings, metadata"""
 
     texts = []
     for chunk in chunks:
@@ -23,7 +23,8 @@ def embed_chunks(chunks):
     metadata = [
         {
             'source': chunk['source'],
-            "chunk_id": chunk['chunk_id']
+            "chunk_id": chunk['chunk_id'],
+            "chunk_start": chunk['chunk_start']
         }
         for chunk in chunks
     ]
@@ -37,5 +38,10 @@ if __name__ == "__main__":
     chunks = chunk_documents(documents, chunk_size=600)
 
     embeddings, metadata = embed_chunks(chunks)
+
     print(f"Number of chunks embedded: {len(embeddings)}")
-    print(f"Embedding vector dimension: {len(embeddings[0])}")
+
+    if embeddings:
+        print(f"Embedding vector dimension: {len(embeddings[0])}")
+    else:
+        print("No embeddings returned.")
